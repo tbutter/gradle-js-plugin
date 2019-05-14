@@ -27,7 +27,7 @@ class JsMinifier {
         level.setOptionsForWarningLevel(options)
         List<SourceFile> externs = CommandLineRunner.getBuiltinExterns(options.environment);
         if (externsFiles.size()) {
-            externs.addAll(externsFiles.collect() { SourceFile.fromFile(it) })
+            externs.addAll(externsFiles.collect() { SourceFile.fromFile(it.absolutePath) })
         }
         List<SourceFile> inputs = new ArrayList<SourceFile>()
         inputFiles.each { inputFile -> 
