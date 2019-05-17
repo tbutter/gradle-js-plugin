@@ -7,22 +7,8 @@ Wrangling your JS in a [Gradle](https://gradle.org) build is easy! Just add this
 ### Gradle 2.1+
 ```groovy
 plugins {
-  id "com.eriwen.gradle.js" version "2.14.1"
+  id "eu.butter.gradle.js" version "2.15.1"
 }
-```
-
-### Gradle 2.0-
-```groovy
-buildscript {
-  repositories {
-    jcenter()
-  }
-  dependencies {
-    classpath "com.eriwen:gradle-js-plugin:1.12.1"
-  }
-}
-
-apply plugin: "com.eriwen.gradle.js"
 ```
 
 
